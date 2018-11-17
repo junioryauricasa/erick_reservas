@@ -1,5 +1,6 @@
 <?php include('_include/_header.php'); ?>
 
+
     <!-- Page Content -->
     <div class="container" style="margin-top: -50px">
       <div class="row">
@@ -37,7 +38,7 @@
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque optio, quaerat sint tempora perspiciatis, sunt error, ex iste placeat quasi laborum assumenda, recusandae consequuntur quam in aperiam sed aliquam mollitia.
                 </p>
-                <a href="reservar-habitacion.php" class="btn btn-danger">Reservar</a>
+                <a href="reservar-habitación.html" class="btn btn-danger">Reservar</a>
               </div>
           </div>
 
