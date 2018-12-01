@@ -41,8 +41,9 @@
         Descriptión: Bloquear F12 y Click Derecho
      -->
     <script type="text/javascript">
-        document.oncontextmenu = function(){return false;}
+        //document.oncontextmenu = function(){return false;}
 
+        /*
         $(document).keydown(function (event) {
             if (event.keyCode == 123) { // Prevent F12
                 return false;
@@ -50,6 +51,7 @@
                 return false;
             }
         });
+        */
     </script>
     <!-- more END scripts -->   
 

@@ -1,4 +1,7 @@
-<?php include('_include/_header.php'); ?>
+<?php 
+  include('_include/_header.php'); 
+  include("conexion.php");
+?>
 
     <!-- Page Content -->
     <div class="container" style="margin-top: 30px">
@@ -130,14 +133,32 @@
                       </div>
 
                       <div class="col-md-4">
-                        <select name="" id="" class="form-control">
-                          <option value="">Departamento</option>
-                        </select>
+                        
+
+<select id = "id_departamento" class = "form-control" name = "id_departamento" required = "required">
+  <option value = "">DEPARTAMENTO</option>
+  <?php
+    $sql = $conn->prepare("SELECT * FROM ubdepartamento");
+    if($sql->execute()){
+      $g_result = $sql->get_result();
+    }
+    while($row = $g_result->fetch_array()){
+  ?>
+    <option value = "<?php echo $row['idDepa']?>">
+      <?php echo utf8_encode($row['departamento'])?>
+    </option>
+  <?php
+      }
+    $conn->close(); 
+  ?>
+</select>
+
+
                       </div>
                       <div class="col-md-4">
-                        <select name="" id="" class="form-control">
-                          <option value="">Provincia</option>
-                        </select>
+                        <select  id="municipio" name="municipio"  class="form-control" disabled="disabled" required="required">
+                        <option value="">PROVINCIA</option>
+                      </select>
                       </div>
                       <div class="col-md-4">
                         <select name="" id="" class="form-control">
@@ -172,6 +193,24 @@
 
     </div>
     <!-- /.container -->
+
+    <!-- SELECT UBIGEO DEPENDIENTES -->
+<script type = "text/javascript">
+  $(document).ready(function(){
+    $('#id_departamento').on('change', function(){
+        if($('#id_departamento').val() == ""){
+          $('#municipio').empty();
+          $('<option value = "">Selecciona un municipio</option>').appendTo('#municipio');
+          $('#municipio').attr('disabled', 'disabled');
+        }else{
+          $('#municipio').removeAttr('disabled', 'disabled');
+          $('#municipio').load('municipio_get.php?id_departamento=' + $('#id_departamento').val());
+        }
+    });
+  });
+</script>
+
+    <!-- END SELECT UBIGEO DEPENDIENTES -->
 
     <script>
     function soloLetras(e){
