@@ -15,7 +15,7 @@
                         Nombres Completos:
                       </div>
                       <div class="col-md-6">
-                          <input type="text" id="nombres" name="nombres" placeholder="Ingresa tus nombres completos" class="form-control">
+                          <input type="text"  onkeypress="return soloLetras(event)" maxlength="25" id="nombres" name="nombres" placeholder="Ingresa tus nombres completos" class="form-control">
                       </div>
                       <br>
                       <br>
@@ -23,7 +23,7 @@
                         Apellidos:
                       </div>
                       <div class="col-md-6">
-                        <input type="text" placeholder="Ingresa tus Apellidos completos" class="form-control" required="true">
+                        <input type="text"  onkeypress="return soloLetras(event)" maxlength="25" placeholder="Ingresa tus Apellidos completos" class="form-control" required="true">
                       </div>
                       <br>
                       <br>
@@ -49,7 +49,7 @@
                         Número de Tarjeta de Crédito: 
                       </div>
                       <div class="col-md-6">
-                        <input type="text" id="numtarjeta" name="numtarjeta" placeholder="Ingresa tus Código de tarjeta" class="form-control" onkeypress="return numeros(event)">
+                        <input type="text" id="numtarjeta" maxlength="16" name="numtarjeta" placeholder="Ingresa tus Código de tarjeta" class="form-control" onkeypress="return numeros(event)">
                       </div>
                       <br>
                       <br>
@@ -57,7 +57,7 @@
                         Titular de la tarjeta:
                       </div>
                       <div class="col-md-6">
-                          <input type="text" placeholder="Titular de la tarjeta" class="form-control" required="true">
+                          <input type="text" onkeypress="return soloLetras(event)" maxlength="50" placeholder="Titular de la tarjeta" class="form-control" required="true">
                       </div>
                       <br>
                       <br>
@@ -172,5 +172,26 @@
 
     </div>
     <!-- /.container -->
+
+    <script>
+    function soloLetras(e){
+       key = e.keyCode || e.which;
+       tecla = String.fromCharCode(key).toLowerCase();
+       letras = " áéíóúabcdefghijklmnñopqrstuvwxyz";
+       especiales = "8-37-39-46";
+
+       tecla_especial = false
+       for(var i in especiales){
+            if(key == especiales[i]){
+                tecla_especial = true;
+                break;
+            }
+        }
+
+        if(letras.indexOf(tecla)==-1 && !tecla_especial){
+            return false;
+        }
+    }
+</script>
 
 <?php include('_include/_footer.php'); ?>
