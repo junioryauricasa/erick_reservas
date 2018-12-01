@@ -9,13 +9,13 @@
                 <h1>Formulario de registro de habitación</h1>
                 <br>
                 <div class="col-md-6">
-                  <form action="">
+                  <form action="" method="POST">
                     <div class="row">
                       <div class="col-md-6">
                         Nombres Completos:
                       </div>
                       <div class="col-md-6">
-                          <input type="text" placeholder="Ingresa tus nombres completos" class="form-control" required="true">
+                          <input type="text" id="nombres" name="nombres" placeholder="Ingresa tus nombres completos" class="form-control">
                       </div>
                       <br>
                       <br>
@@ -39,7 +39,7 @@
                       <div class="col-md-6">
                         <select name="" id="" class="form-control">
                           <option value="">Visa</option>
-                          <option value="">Marster Card</option>
+                          <option value="">Master Card</option>
                           <option value="">Dinners Club</option>
                         </select>
                       </div>
@@ -49,7 +49,7 @@
                         Número de Tarjeta de Crédito: 
                       </div>
                       <div class="col-md-6">
-                        <input type="text" placeholder="Ingresa tus Código de tarjeta" class="form-control" required="true">
+                        <input type="text" id="numtarjeta" name="numtarjeta" placeholder="Ingresa tus Código de tarjeta" class="form-control" onkeypress="return numeros(event)">
                       </div>
                       <br>
                       <br>

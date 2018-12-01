@@ -51,7 +51,57 @@
             }
         });
     </script>
-    <!-- more END scripts -->    
+    <!-- more END scripts -->   
+
+    <!-- validaciones en js -->
+    <script type="text/javascript">
+        // validación de campos
+        valor = document.getElementById("nombres").value;
+        if( valor == null || valor.length == 0 || /^\s+$/.test(valor) ) {
+          return false;
+        }
+
+        // validadnod solo letras
+        function soloLetras(e){
+           key = e.keyCode || e.which;
+           tecla = String.fromCharCode(key).toLowerCase();
+           letras = " áéíóúabcdefghijklmnñopqrstuvwxyz";
+           especiales = "8-37-39-46";
+
+           tecla_especial = false
+           for(var i in especiales){
+                if(key == especiales[i]){
+                    tecla_especial = true;
+                    break;
+                }
+            }
+
+            if(letras.indexOf(tecla)==-1 && !tecla_especial){
+                return false;
+            }
+        }
+    </script> 
+
+    <!-- validacion de texto js -->
+    <script>
+        function numeros(e){
+            key = e.keyCode || e.which;
+            tecla = String.fromCharCode(key).toLowerCase();
+            letras = "0123456789";
+            especiales = [8,37,39,46];
+         
+            tecla_especial = false
+            for(var i in especiales){
+         if(key == especiales[i]){
+             tecla_especial = true;
+             break;
+                } 
+            }
+         
+            if(letras.indexOf(tecla)==-1 && !tecla_especial)
+                return false;
+        }
+    </script>
 
   </body>
 </html>

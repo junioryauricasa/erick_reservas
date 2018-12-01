@@ -1,7 +1,7 @@
 <?php 
   include('_include/_header.php'); 
   $hoy = date("Y-m-d");
-  $manana = date('Y-m-d', strtotime('+1 day',strtotime($hoy)));
+  $manana = $hoy;
 ?>
 
     <!-- Page Content -->
@@ -65,9 +65,11 @@
 
 
   <script>
+
     $(function() {
       $("#from").datepicker({minDate:0});
     });
+
   </script>
 
 <?php include('_include/_footer.php'); ?>
