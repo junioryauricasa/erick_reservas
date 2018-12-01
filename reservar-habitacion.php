@@ -113,18 +113,18 @@
                         <input type="email" id="mail" name="mail" placeholder="" class="form-control" placeholder="Ingresa tu correo" required="true">
                       </div>
                       <br><br>
-                      <div class="col-md-6">
+                      <!--div class="col-md-6">
                         Confirmar Correo Electrónico:
                       </div>
                       <div class="col-md-6">
                         <input type="mail" id="cmail" name="cmail" placeholder="" class="form-control" placeholder="Ingresa tu correo" required="true">
                       </div>
-                      <br><br>
+                      <br><br-->
                       <div class="col-md-6">
-                        Teléfono:
+                        Celular:
                       </div>
                       <div class="col-md-6">
-                        <input type="text" id="telefono" name="telefono" placeholder="" minlength="6" maxlength="12" class="form-control" placeholder="Ingresa tu teléfono" onkeypress="return numeros(event)">
+                        <input type="text" id="telefono" name="telefono" placeholder="" minlength="9" maxlength="9" class="form-control" placeholder="Número de celular" onkeypress="return numeros(event)">
                       </div>
                       <br><br>
 

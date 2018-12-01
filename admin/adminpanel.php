@@ -66,6 +66,7 @@
         <th>Código</th>
         <th>Telefono</th>
         <th>Solicitud</th>
+        <th>Opciones</th>
       </tr>
     </thead>
     <tbody>
@@ -120,6 +121,10 @@ if ($result->num_rows > 0) {
 	        	<td>".$row['codigocvc']."</td>
 	        	<td>".$row['telf']."</td>
 	        	<td>".$row['solicitud']."</td>
+	        	<td>
+	        		<a href='https://api.whatsapp.com/send?phone=51".$row['telf']."&text=Hola ".$row['nvchnombre']." ".$row['nvchapellido'].", hemos recibido tu solicitud de reserva y dejanos decirte que esta aprobada' target='_blank' class='btn btn-success btn-xs'>Aceptar</a>
+	        		<a href='https://api.whatsapp.com/send?phone=51".$row['telf']."&text=Hola ".$row['nvchnombre']." ".$row['nvchapellido'].", hemos recibido tu solicitud de reserva, la cual no pudo ser aprobada' target='_blank' class='btn btn-danger btn-xs'>Rechazar</a>
+	        	</td>
 	        </tr>
         ";
     }

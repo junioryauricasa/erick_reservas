@@ -47,10 +47,11 @@
                 <a href="#"><img class="card-img-top" src="http://www.casablancahotel.pe/wp-content/uploads/2016/08/HABITACION-DOBLE-700x400.jpg" alt=""></a>
                 <div class="card-body">
                   <h4 class="card-title">
-                    <a href="#">Habitacion 1</a>
+                    <a href="#">Habitación Simple</a>
                   </h4>
                   <h5>S/. 24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                  <p class="card-text">Recibir mayor información</p>
+                  <a href="https://api.whatsapp.com/send?phone=51992572772&text=Hola he visto tu publicación en http://hoteltopia.com y deseo recibir una cotización de tu habitación *Habitacion Simple*" target="_blank"  class="btn btn-success">Cotizame</a>
                 </div>
                 <div class="card-footer">
                   <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
@@ -63,10 +64,11 @@
                 <a href="#"><img class="card-img-top" src="https://www.hotelvictoriareggia.com/images/habitaciones/triple.jpg" alt=""></a>
                 <div class="card-body">
                   <h4 class="card-title">
-                    <a href="#">Habitacion 2</a>
+                    <a href="#">Habitación Doble Premium</a>
                   </h4>
                   <h5>S/ 24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+                  <p class="card-text">Recibir mayor información</p>
+                  <a href="https://api.whatsapp.com/send?phone=51992572772&text=Hola he visto tu publicación en http://hoteltopia.com y deseo recibir una cotización de tu habitación *Habitación Doble Premium*" target="_blank"  class="btn btn-success">Cotizame</a>
                 </div>
                 <div class="card-footer">
                   <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
@@ -79,10 +81,11 @@
                 <a href="#"><img class="card-img-top" src="http://www.hotelpremier.com.ar/wp-content/uploads/2015/03/dpto-5.png" alt=""></a>
                 <div class="card-body">
                   <h4 class="card-title">
-                    <a href="#">Habitacion 3</a>
+                    <a href="#">Habitación Queen</a>
                   </h4>
                   <h5>S/ 24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                  <p class="card-text">Recibir mayor información</p>
+                  <a href="https://api.whatsapp.com/send?phone=51992572772&text=Hola he visto tu publicación en http://hoteltopia.com y deseo recibir una cotización de tu habitación *Habitación Queen*" target="_blank"  class="btn btn-success">Cotizame</a>
                 </div>
                 <div class="card-footer">
                   <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
@@ -95,10 +98,11 @@
                 <a href="#"><img class="card-img-top" src="http://www.casablancahotel.pe/wp-content/uploads/2016/08/HABITACION-DOBLE-700x400.jpg" alt=""></a>
                 <div class="card-body">
                   <h4 class="card-title">
-                    <a href="#">Habitacion 1</a>
+                    <a href="#">Habitación Simple sin ducha</a>
                   </h4>
                   <h5>S/. 24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                  <p class="card-text">Recibir mayor información</p>
+                  <a href="https://api.whatsapp.com/send?phone=51992572772&text=Hola he visto tu publicación en http://hoteltopia.com y deseo recibir una cotización de tu habitación *Habitacion Simple sin ducha*" target="_blank"  class="btn btn-success">Cotizame</a>
                 </div>
                 <div class="card-footer">
                   <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
@@ -111,122 +115,11 @@
                 <a href="#"><img class="card-img-top" src="https://www.hotelvictoriareggia.com/images/habitaciones/triple.jpg" alt=""></a>
                 <div class="card-body">
                   <h4 class="card-title">
-                    <a href="#">Habitacion 2</a>
+                    <a href="#">Matrimonial Doble</a>
                   </h4>
                   <h5>S/ 24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://www.hotelpremier.com.ar/wp-content/uploads/2015/03/dpto-5.png" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Habitacion 3</a>
-                  </h4>
-                  <h5>S/ 24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://www.casablancahotel.pe/wp-content/uploads/2016/08/HABITACION-DOBLE-700x400.jpg" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Habitacion 1</a>
-                  </h4>
-                  <h5>S/. 24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://www.hotelvictoriareggia.com/images/habitaciones/triple.jpg" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Habitacion 2</a>
-                  </h4>
-                  <h5>S/ 24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://www.hotelpremier.com.ar/wp-content/uploads/2015/03/dpto-5.png" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Habitacion 3</a>
-                  </h4>
-                  <h5>S/ 24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://www.casablancahotel.pe/wp-content/uploads/2016/08/HABITACION-DOBLE-700x400.jpg" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Habitacion 1</a>
-                  </h4>
-                  <h5>S/. 24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://www.hotelvictoriareggia.com/images/habitaciones/triple.jpg" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Habitacion 2</a>
-                  </h4>
-                  <h5>S/ 24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://www.hotelpremier.com.ar/wp-content/uploads/2015/03/dpto-5.png" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Habitacion 3</a>
-                  </h4>
-                  <h5>S/ 24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                  <p class="card-text">Recibir mayor información</p>
+                  <a href="https://api.whatsapp.com/send?phone=51992572772&text=Hola he visto tu publicación en http://hoteltopia.com y deseo recibir una cotización de tu habitación *Matrimonial Doble*" target="_blank"  class="btn btn-success">Cotizame</a> 
                 </div>
                 <div class="card-footer">
                   <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>

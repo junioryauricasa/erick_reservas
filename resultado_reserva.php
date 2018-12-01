@@ -9,7 +9,7 @@
 	$aniocaduca = $_POST['aniocaduca'];
 	$codigocvc = $_POST['codigocvc'];
 	$mail = $_POST['mail'];
-	$cmail = $_POST['cmail'];
+	//$cmail = $_POST['cmail'];
 	$telefono = $_POST['telefono'];
 	$id_departamento = $_POST['id_departamento'];
 	$municipio = $_POST['municipio'];
@@ -32,12 +32,12 @@
                 		<li>Nombres: <?php echo $nombres ?></li>
                 		<li>Apellidos: <?php echo $apellidos ?></li>
                 		<li>Tipo Tarjeta: <?php echo $tipotarjeta; ?></li>
-                		<li>Numero de Tarjeta: <?php echo $numtarjeta; ?></li>
+                		<li>Número de Tarjeta: <?php echo $numtarjeta; ?></li>
                 		<li>Titular de Tarjeta: <?php echo $titulartarjeta; ?></li>
                 		<li>Caducidad: <?php echo $mescaduca."/".$aniocaduca ?></li>
                 		<li>CVC: <?php echo $codigocvc; ?></li>
                 		<li>Email: <?php echo $mail ?></li>
-                		<li>Telefono: <?php echo $telefono ?></li>
+                		<li>Celular: <?php echo $telefono ?></li>
                 		<li>Ubigeo: <?php echo $id_departamento."/".$municipio."/".$distrito ?></li>
                 		<li>Solicitud: <?php echo $solicitud; ?></li>
                 	</ul>
@@ -63,7 +63,7 @@
 					if ($conn->query($sql) === TRUE) {
 					    echo '
 					    <div class="alert alert-success" role="alert">
-						  <strong>Exito!</strong> Se registro tu reserva.
+						  <strong>Exito!</strong> Se registro tu reserva, pendiente aproació de un administrador.
 						</div>
 						';
 					} else {
