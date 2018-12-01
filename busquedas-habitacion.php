@@ -9,7 +9,7 @@
       <div class="row" style="margin-top: 50px">
           <div class="col-lg-6 col-md-6 mb-12" style="text-align: center; margin: 0 auto">
             <h1 style="text-align: center">Fecha de Reserva</h1>
-            <form action="#" method="POST" style="text-align: center; margin: 0 auto">
+            <form action="resultado-reservacion.php" method="POST" style="text-align: center; margin: 0 auto">
             <!--form action="resultados-busquedas.php" method="POST" style="text-align: center; margin: 0 auto"-->
 
               <table style="width: 100%">
