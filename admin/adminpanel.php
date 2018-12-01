@@ -37,6 +37,7 @@
 			<ul class="nav navbar-nav navbar-right">
 				<?php if (isset($_SESSION['usr_id'])) { ?>
 				<li><p class="navbar-text">Logeado como <i class="btn btn-danger btn-xs" ><b><?php echo $_SESSION['usr_name']; ?></b></i></p></li>
+				<li><a href="users.php">Users</a></li>
 				<li><a href="adminpanel.php">Reservas</a></li>
 				<li><a href="logout.php">Salir</a></li>
 				<?php } else { ?>
@@ -124,6 +125,7 @@ if ($result->num_rows > 0) {
 	        	<td>
 	        		<a href='https://api.whatsapp.com/send?phone=51".$row['telf']."&text=Hola ".$row['nvchnombre']." ".$row['nvchapellido'].", hemos recibido tu solicitud de reserva y dejanos decirte que esta aprobada' target='_blank' class='btn btn-success btn-xs'>Aceptar</a>
 	        		<a href='https://api.whatsapp.com/send?phone=51".$row['telf']."&text=Hola ".$row['nvchnombre']." ".$row['nvchapellido'].", hemos recibido tu solicitud de reserva, la cual no pudo ser aprobada' target='_blank' class='btn btn-danger btn-xs'>Rechazar</a>
+	        		<a href='eliminarreserva.php?codigo=".$row['intidreshabitacion']."' class='btn btn-default btn-xs'>Eliminar</a>
 	        	</td>
 	        </tr>
         ";

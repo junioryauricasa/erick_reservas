@@ -40,7 +40,7 @@ if (isset($_POST['signup'])) {
 		//$terminosycond_error = "Debes aceptar Terminos y condiciones";
 	}
 	if (!$error) {
-		if(mysqli_query($con, "INSERT INTO users(name,email,password,estado) VALUES('" . $name . "', '" . $email . "', '" . md5($password) . "',1)")) {
+		if(mysqli_query($con, "INSERT INTO users(name,email,password,estado) VALUES('" . $name . "', '" . $email . "', '" . md5($password) . "',0)")) {
 			//$successmsg = "¡Registrado exitosamente! <a href='login.php'>Click here to Login</a>";
 			$successmsg = '
 			  <div class="alert alert-success alert-dismissable fade in">

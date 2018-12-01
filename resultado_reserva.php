@@ -45,41 +45,42 @@
                 
                 <?php 
 
-					// Insert
-					$servername = "localhost";
-					$username = "root";
-					$password = "";
-					$dbname = "db_modular";
+          					// Insert
+          					$servername = "localhost";
+          					$username = "root";
+          					$password = "";
+          					$dbname = "db_modular";
 
-					// Create connection
-					$conn = new mysqli($servername, $username, $password, $dbname);
-					// Check connection
-					if ($conn->connect_error) {
-					    die("Connection failed: " . $conn->connect_error);
-					} 
+          					// Create connection
+          					$conn = new mysqli($servername, $username, $password, $dbname);
+          					// Check connection
+          					if ($conn->connect_error) {
+          					    die("Connection failed: " . $conn->connect_error);
+          					} 
 
-					$sql = "INSERT INTO tb_rsvhabitacion (intidreshabitacion, nvchnombre, nvchapellido, inttipotarjeta, numtarjeta, mescaduca, aniocaduca, codigocvc, email, telf, dep, prov, dist, solicitud) VALUES (NULL, '$nombres', '$apellidos', '$tipotarjeta', '$numtarjeta', '$mescaduca ', '$aniocaduca', '$codigocvc', '$mail', '$telefono', '$id_departamento', '$municipio', '$distrito', '$solicitud');";
+          					$sql = "INSERT INTO tb_rsvhabitacion (intidreshabitacion, nvchnombre, nvchapellido, inttipotarjeta, numtarjeta, mescaduca, aniocaduca, codigocvc, email, telf, dep, prov, dist, solicitud) VALUES (NULL, '$nombres', '$apellidos', '$tipotarjeta', '$numtarjeta', '$mescaduca ', '$aniocaduca', '$codigocvc', '$mail', '$telefono', '$id_departamento', '$municipio', '$distrito', '$solicitud');";
 
-					if ($conn->query($sql) === TRUE) {
-					    echo '
-					    <div class="alert alert-success" role="alert">
-						  <strong>Exito!</strong> Se registro tu reserva, pendiente aproació de un administrador.
-						</div>
-						';
-					} else {
-					    echo "Error: " . $sql . "<br>" . $conn->error;
-					    echo '
-						    <div class="alert alert-danger" role="alert">
-							  <strong>Error!</strong>'.$sql.$conn->error;'
-							</div>
-					    ';
-					}
-					$conn->close();
-					// END Insert
+          					if ($conn->query($sql) === TRUE) {
+          					    echo '
+          					    <div class="alert alert-success" role="alert">
+          						  <strong>Exito!</strong> Se registro tu reserva, pendiente aproación de un administrador.
+          						</div>
+          						';
+          					} else {
+          					    echo "Error: " . $sql . "<br>" . $conn->error;
+          					    echo '
+          						    <div class="alert alert-danger" role="alert">
+          							  <strong>Error!</strong>'.$sql.$conn->error;'
+          							</div>
+          					    ';
+          					}
+          					$conn->close();
+          					// END Insert
 
                 ?>
                 <br>
-                <a href="busquedas-habitacion.html" class="btn btn-danger">Buscar Habitaciones</a>
+                <a href="busquedas-habitacion.html" class="btn btn-success">Buscar Habitaciones</a>
+                <!--a href="pdf.php" target="_blank" class="btn btn-danger">Descargar PDF</a-->
               </div>
           </div>
 
@@ -151,5 +152,6 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   </body>
+
 
 </html>
