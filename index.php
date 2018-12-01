@@ -34,9 +34,9 @@
           
           <div class="row" style="margin-bottom: 70px; margin-top: 70px">
               <div class="col-lg-12 col-md-12 mb-12 text-center">
-                <p>
+                <!--p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque optio, quaerat sint tempora perspiciatis, sunt error, ex iste placeat quasi laborum assumenda, recusandae consequuntur quam in aperiam sed aliquam mollitia.
-                </p>
+                </p-->
                 <a href="reservar-habitacion.php" class="btn btn-danger">Reservar</a>
               </div>
           </div>

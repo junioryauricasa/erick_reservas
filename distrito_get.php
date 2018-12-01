@@ -7,6 +7,6 @@
 		$a_result = $distritos->get_result();
 	}
 		while($row = $a_result->fetch_array()){
-			echo '<option value = "'.$row['ubDist'].'">'.utf8_encode( $row['distrito']).'</option>';
+			echo '<option value = "'.$row['idDist'].'">'.utf8_encode( $row['distrito']).'</option>';
 		}
 ?>
