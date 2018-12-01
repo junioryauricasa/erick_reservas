@@ -15,7 +15,7 @@
                         Nombres Completos:
                       </div>
                       <div class="col-md-6">
-                          <input type="text"  onkeypress="return soloLetras(event)" maxlength="25" id="nombres" name="nombres" placeholder="Ingresa tus nombres completos" class="form-control">
+                          <input type="text"  onkeypress="return soloLetras(event)" maxlength="25" id="nombres" name="nombres" placeholder="Ingresa tus nombres completos" class="form-control" required="true">
                       </div>
                       <br>
                       <br>
@@ -49,7 +49,7 @@
                         Número de Tarjeta de Crédito: 
                       </div>
                       <div class="col-md-6">
-                        <input type="text" id="numtarjeta" maxlength="16" name="numtarjeta" placeholder="Ingresa tus Código de tarjeta" class="form-control" onkeypress="return numeros(event)">
+                        <input type="text" id="numtarjeta" minlength="14" maxlength="16" name="numtarjeta" placeholder="Ingresa tus Código de tarjeta" class="form-control" onkeypress="return numeros(event)" required="true">
                       </div>
                       <br>
                       <br>
@@ -64,7 +64,7 @@
                       <div class="col-md-6">
                         Fecha de Caducidad:
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-3">
                           <select name="" id="" class="form-control" style="margin-bottom: 5px">
                             <option value="">01</option>
                             <option value="">02</option>
@@ -95,8 +95,8 @@
                       <div class="col-md-6">
                         Código CVC:
                       </div>
-                      <div class="col-md-6">
-                        <input type="number" placeholder="" class="form-control" maxlength="3" minlength="3">
+                      <div class="col-md-2">
+                        <input type="text" placeholder="" class="form-control" maxlength="3" minlength="3" onkeypress="return numeros(event)">
                       </div>
 
                       <br><br>
@@ -108,21 +108,21 @@
                         Correo Electrónico: 
                       </div>
                       <div class="col-md-6">
-                        <input type="mail" placeholder="" class="form-control" placeholder="Ingresa tu correo">
+                        <input type="mail" placeholder="" class="form-control" placeholder="Ingresa tu correo" required="true">
                       </div>
                       <br><br>
                       <div class="col-md-6">
                         Confirmar Correo Electrónico:
                       </div>
                       <div class="col-md-6">
-                        <input type="mail" placeholder="" class="form-control" placeholder="Ingresa tu correo">
+                        <input type="mail" placeholder="" class="form-control" placeholder="Ingresa tu correo" required="true">
                       </div>
                       <br><br>
                       <div class="col-md-6">
                         Teléfono:
                       </div>
                       <div class="col-md-6">
-                        <input type="number" placeholder="" class="form-control" placeholder="Ingresa tu teléfono">
+                        <input type="text" placeholder="" minlength="6" maxlength="12" class="form-control" placeholder="Ingresa tu teléfono" onkeypress="return numeros(event)">
                       </div>
                       <br><br>
                       <div class="col-md-12">
