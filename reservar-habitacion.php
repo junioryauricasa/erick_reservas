@@ -156,12 +156,12 @@
 
                       </div>
                       <div class="col-md-4">
-                        <select  id="municipio" name="municipio"  class="form-control" disabled="disabled" required="required">
+                        <select id="municipio" name="municipio"  class="form-control" disabled="disabled" required="required">
                         <option value="">PROVINCIA</option>
                       </select>
                       </div>
                       <div class="col-md-4">
-                        <select name="" id="" class="form-control">
+                        <select id="distrito" name="distrito" class="form-control">
                           <option value="">Distrito</option>
                         </select>
                       </div>
@@ -219,13 +219,13 @@
 
 <?php include('_include/_footer.php'); ?>
 
-<!-- SELECT UBIGEO DEPENDIENTES -->
+<!-- SELECT UBIGEO DEPENDIENTES provincia -->
 <script type = "text/javascript">
   $(document).ready(function(){
     $('#id_departamento').on('change', function(){
         if($('#id_departamento').val() == ""){
           $('#municipio').empty();
-          $('<option value = "">Selecciona un municipio</option>').appendTo('#municipio');
+          $('<option value = "">PROVINCIA</option>').appendTo('#municipio');
           $('#municipio').attr('disabled', 'disabled');
         }else{
           $('#municipio').removeAttr('disabled', 'disabled');
@@ -234,4 +234,21 @@
     });
   });
 </script>
-<!-- END SELECT UBIGEO DEPENDIENTES -->
+<!-- END SELECT UBIGEO DEPENDIENTES provincia -->
+
+<!-- SELECT UBIGEO DEPENDIENTES distrito -->
+<script type = "text/javascript">
+  $(document).ready(function(){
+    $('#municipio').on('change', function(){
+        if($('#municipio').val() == ""){
+          $('#distrito').empty();
+          $('<option value = "">DISTRITO</option>').appendTo('#distrito');
+          $('#distrito').attr('disabled', 'disabled');
+        }else{
+          $('#distrito').removeAttr('disabled', 'disabled');
+          $('#distrito').load('distrito_get.php?municipio=' + $('#municipio').val());
+        }
+    });
+  });
+</script>
+<!-- END SELECT UBIGEO DEPENDIENTES provincia -->
