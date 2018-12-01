@@ -15,7 +15,7 @@
                         Nombres Completos:
                       </div>
                       <div class="col-md-6">
-                          <input type="text" placeholder="Ingresa tus nombres completos" class="form-control">
+                          <input type="text" placeholder="Ingresa tus nombres completos" class="form-control" required="true">
                       </div>
                       <br>
                       <br>
@@ -23,7 +23,7 @@
                         Apellidos:
                       </div>
                       <div class="col-md-6">
-                        <input type="text" placeholder="Ingresa tus Apellidos completos" class="form-control">
+                        <input type="text" placeholder="Ingresa tus Apellidos completos" class="form-control" required="true">
                       </div>
                       <br>
                       <br>
@@ -49,7 +49,7 @@
                         Número de Tarjeta de Crédito: 
                       </div>
                       <div class="col-md-6">
-                        <input type="text" placeholder="Ingresa tus Código de tarjeta" class="form-control">
+                        <input type="text" placeholder="Ingresa tus Código de tarjeta" class="form-control" required="true">
                       </div>
                       <br>
                       <br>
@@ -57,7 +57,7 @@
                         Titular de la tarjeta:
                       </div>
                       <div class="col-md-6">
-                          <input type="text" placeholder="Titular de la tarjeta" class="form-control">
+                          <input type="text" placeholder="Titular de la tarjeta" class="form-control" required="true">
                       </div>
                       <br>
                       <br>
@@ -125,22 +125,28 @@
                         <input type="number" placeholder="" class="form-control" placeholder="Ingresa tu teléfono">
                       </div>
                       <br><br>
-                      <div class="col-md-6">
+                      <div class="col-md-12">
                         Ubigeo:
                       </div>
-                      <div class="col-md-6">
+
+                      <div class="col-md-4">
                         <select name="" id="" class="form-control">
                           <option value="">Departamento</option>
                         </select>
+                      </div>
+                      <div class="col-md-4">
                         <select name="" id="" class="form-control">
                           <option value="">Provincia</option>
                         </select>
+                      </div>
+                      <div class="col-md-4">
                         <select name="" id="" class="form-control">
                           <option value="">Distrito</option>
                         </select>
                       </div>
+
                       <br><br>
-                      <div class="col-md-6">
+                      <div class="col-md-12">
                         Solicitud Especial (opcional)
                       </div>
                       <div class="col-md-12">
@@ -167,18 +173,4 @@
     </div>
     <!-- /.container -->
 
-    <!-- Footer -->
-    <footer class="py-5 bg-dark" style="margin-top: 70px">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
-      </div>
-      <!-- /.container -->
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  </body>
-
-</html>
+<?php include('_include/_footer.php'); ?>

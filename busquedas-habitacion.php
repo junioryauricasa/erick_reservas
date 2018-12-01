@@ -1,23 +1,30 @@
-<?php include('_include/_header.php'); ?>
+<?php 
+  include('_include/_header.php'); 
+  $hoy = date("Y-m-d");
+  $manana = date('Y-m-d', strtotime('+1 day',strtotime($hoy)));
+?>
 
     <!-- Page Content -->
     <div class="container">
       <div class="row" style="margin-top: 50px">
           <div class="col-lg-6 col-md-6 mb-12" style="text-align: center; margin: 0 auto">
             <h1 style="text-align: center">Fecha de Reserva</h1>
-            
-            <form action="resultados-busquedas.php" method="POST" style="text-align: center; margin: 0 auto">
+            <form action="#" method="POST" style="text-align: center; margin: 0 auto">
+            <!--form action="resultados-busquedas.php" method="POST" style="text-align: center; margin: 0 auto"-->
+
               <table style="width: 100%">
                 <tr>
-                  <td><span>Fecha Entrada: </span></td>
+                  <td><label for="from">Fecha Entrada: </label></td>
                   <td>
-                    <input type="date" class="form-control" placeholder="">
+                    <!--input type="date" id="from" name="from" min=""-->
+                    <input type="date" name="from" id="from" placeholder="Introduce una fecha" min="<?php echo $hoy;?>" value="<?php echo $hoy;?>" class="form-control" required/>
                   </td>
                 </tr>
                 <tr>
-                  <td><span>Fecha Salida: </span></td>
+                  <td><label for="to">Fecha Salida: </label></td>
                   <td>
-                    <input type="date" class="form-control" placeholder="">
+                    <!--input type="date" id="to" name="to"-->
+                    <input type="date" name="to" id="to" placeholder="Introduce una fecha" class="form-control" min="<?php echo $manana;?>" required/>
                   </td>
                 </tr>
                 <tr>
@@ -56,25 +63,11 @@
     </div>
     <!-- /.container -->
 
-    <!-- Footer >
-    <footer class="py-5 bg-dark" style="margin-top: 70px">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
-      </div>
-    </footer-->
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(function() {
+      $("#from").datepicker({minDate:0});
+    });
+  </script>
 
-<script>
-function recargar()
-{
-location.href=location.href
-}
-setInterval('recargar()',2000)
-</script>
-
-  </body>
-
-</html>
+<?php include('_include/_footer.php'); ?>
