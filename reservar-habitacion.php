@@ -40,9 +40,9 @@
                       </div>
                       <div class="col-md-6">
                         <select name="tipotarjeta" id="tipotarjeta" class="form-control">
-                          <option value="">Visa</option>
-                          <option value="">Master Card</option>
-                          <option value="">Dinners Club</option>
+                          <option value="1">Visa</option>
+                          <option value="2">Master Card</option>
+                          <option value="3">Dinners Club</option>
                         </select>
                       </div>
                       <br>
