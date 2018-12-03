@@ -37,9 +37,9 @@
             <li class="nav-item">
               <a class="nav-link" href="reservar-habitacion.php">Reservas</a>
             </li>
-            <li class="nav-item">
+            <!--li class="nav-item">
               <a class="nav-link" href="busquedas-habitacion.php">Busquedas</a>
-            </li>
+            </li-->
           </ul>
         </div>
       </div>

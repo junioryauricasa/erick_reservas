@@ -98,7 +98,7 @@
                         Código CVC:
                       </div>
                       <div class="col-md-2">
-                        <input type="text" name="codigocvc" id="codigocvc" placeholder="" class="form-control" maxlength="3" minlength="3" onkeypress="return numeros(event)">
+                        <input type="text" name="codigocvc" id="codigocvc" placeholder="" class="form-control" maxlength="3" minlength="3" onkeypress="return numeros(event)" required="true">
                       </div>
 
                       <br><br>
